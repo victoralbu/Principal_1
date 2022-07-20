@@ -7,11 +7,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Calendar</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer=""></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
 </head>
 <body>
 <section id="container">
     <section id="table-section">
-        <h1 id="date">January 2022</h1>
+        <div id="h1-and-arrows">
+            <h1 class="h1">January 2022</h1>
+            <div id="arrows">
+                <button id="arrow-left"><</button>
+                <button id="arrow-right">></button>
+            </div>
+        </div>
         <ol id="days">
             <li data-col="1" data-row="1">M</li>
             <li data-col="2" data-row="1">T</li>
@@ -62,7 +70,30 @@
         </ol>
     </section>
     <section id="people-section">
-        <h1>test</h1>
+        <h1 id="schedule-date" class="h1">Schedule for January 21, 2022</h1>
+        <ol class="people-list">
+            <li>
+                <div>
+                    <img src="images/avatar1.png" alt="firstImage">
+                    <p>Ionut</p>
+                    <h2>1:00 PM - 2:30 PM</h2>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="images/avatar2.png" alt="secondImage">
+                    <p>Victoras DeLaOras</p>
+                    <h2>2:30 PM - 3:30 PM</h2>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <img src="images/avatar3.jpeg" alt="thirdImage">
+                    <p>Bogdan</p>
+                    <h2>3:30 PM - 5:30 PM</h2>
+                </div>
+            </li>
+        </ol>
     </section>
 </section>
 </body>
