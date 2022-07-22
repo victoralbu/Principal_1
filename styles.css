@@ -31,7 +31,7 @@
     padding: 0 0 0 0;
     display: grid;
     grid-template-columns: repeat(7, 6rem);
-    grid-template-rows: repeat(5, 6rem);
+    grid-template-rows: repeat(6, 6rem);
     justify-content: center;
     gap: 0.5rem;
 }
@@ -65,13 +65,14 @@ body {
 
 #people-section {
     justify-content: center;
-    margin-right: 20rem;
+    margin-right: 15rem;
     margin-left: 3rem;
 }
 
 .people-list {
-    justify-content: center;
     list-style: none;
+    text-align: center;
+    padding: 0 10rem;
 }
 
 .people-list li {
@@ -105,4 +106,8 @@ p {
 
 #arrows {
     margin-top: 1.8rem;
+}
+
+#schedule-date {
+    text-align: center;
 }
