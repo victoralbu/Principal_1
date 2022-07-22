@@ -1,7 +1,8 @@
 function alert() {
     Swal.fire(this.innerText);
-    let monthElement = document.getElementById(("month")).innerText.slice(0,-5);
-    document.getElementById("schedule-date").innerText = `Schedule for ${monthElement} ${this.innerText}, 2022`;
+    let month = document.getElementById(("month")).innerText.slice(0, -5);
+    let year = document.getElementById(("month")).innerText.split(" ")[1];
+    document.getElementById("schedule-date").innerText = `Schedule for ${month} ${this.innerText}, ${year}`;
     this.style.backgroundColor = ""
 }
 
@@ -10,12 +11,12 @@ let liElementCollection = document.getElementById("table").getElementsByTagName(
 for (const li of liElementCollection) {
     li.addEventListener("click", alert);
 }
-
-let dateNow = new Date().getMonth();
-let k = 0;
-
-while (dateNow > k) {
-    document.getElementById("arrow-right").click();
-    k++;
-}
+//console.log(moment().month("January"));
+// let dateNow = new Date().getMonth();
+// let k = 0;
+//
+// while (dateNow > k) {
+//     document.getElementById("arrow-right").click();
+//     k++;
+// }
 
