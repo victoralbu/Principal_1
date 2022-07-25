@@ -11,12 +11,3 @@ let liElementCollection = document.getElementById("table").getElementsByTagName(
 for (const li of liElementCollection) {
     li.addEventListener("click", alert);
 }
-//console.log(moment().month("January"));
-// let dateNow = new Date().getMonth();
-// let k = 0;
-//
-// while (dateNow > k) {
-//     document.getElementById("arrow-right").click();
-//     k++;
-// }
-
